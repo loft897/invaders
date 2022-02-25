@@ -1,8 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+// *{
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
   
 // body {
 //     position: absolute;
@@ -21,7 +21,6 @@ h3{
     width: 500px;
     height: 500px;
     margin: 50px auto;
-    padding: 0 11px;
     box-shadow: 0 2px 10px rgba(0,0,0,0);
     background: url(/ressources/background-black.png);
     animation: defile 5s linear infinite;
@@ -49,7 +48,7 @@ h3{
 }
 
 .alien{
-    background: url(/ressources/vaisseau.png);
+    background: url(/ressources/ennemies.png);
     background-position: center;
     background-size: contain;
 }
