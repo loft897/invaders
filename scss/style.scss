@@ -4,9 +4,61 @@
     padding: 0;
 }
   
-body {
-    background: #333;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+// body {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+// }
+
+h3{
+    text-align: center;
+    margin: 20px 0;
 }
+.grille{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 0 11px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+    background: url(/ressources/background-black.png);
+    animation: defile 5s linear infinite;
+}
+
+@keyframes defile {
+    from{
+        background-position-y: 0px;
+    }
+    to {
+        background-position-y: 256px ;
+    }
+}
+
+.grille div{
+    width: 25px;
+    height: 25px;
+}
+
+.tireur{
+    background: url(/ressources/vaisseau.png);
+    transform: rotate(180deg);
+    background-position: center;
+    background-size: contain;
+}
+
+.alien{
+    background: url(/ressources/vaisseau.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.boom{
+    background-color: red;
+}
+
+.laser{
+    background-color: orange;
+}
+
